@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataModeling.Client.Wpf", "MetadataModeling.Client.Wpf.csproj", "{15620007-C2AD-4AD4-9DBE-BBD050E123EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{1522CC7B-1AE6-4F6B-943F-6407505898AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataModeling.Metadata.Base", "..\MetadataModeling.Metadata.Base\MetadataModeling.Metadata.Base.csproj", "{747DEC3A-4AF7-4355-97DF-89446F67C3CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15620007-C2AD-4AD4-9DBE-BBD050E123EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15620007-C2AD-4AD4-9DBE-BBD050E123EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15620007-C2AD-4AD4-9DBE-BBD050E123EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15620007-C2AD-4AD4-9DBE-BBD050E123EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747DEC3A-4AF7-4355-97DF-89446F67C3CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747DEC3A-4AF7-4355-97DF-89446F67C3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747DEC3A-4AF7-4355-97DF-89446F67C3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747DEC3A-4AF7-4355-97DF-89446F67C3CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67CEA18A-26E2-4B2D-9349-5E8DDC24080C}
+	EndGlobalSection
+EndGlobal

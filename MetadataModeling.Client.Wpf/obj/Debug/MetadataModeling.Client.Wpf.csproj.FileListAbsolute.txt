@@ -1,0 +1,14 @@
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\bin\Debug\MetadataModeling.Client.Wpf.exe.config
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\bin\Debug\MetadataModeling.Client.Wpf.exe
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\bin\Debug\MetadataModeling.Client.Wpf.pdb
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MainWindow.g.cs
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\App.g.cs
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MetadataModeling.Client.Wpf_MarkupCompile.cache
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MetadataModeling.Client.Wpf_MarkupCompile.lref
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MainWindow.baml
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MetadataModeling.Client.Wpf.g.resources
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MetadataModeling.Client.Wpf.Properties.Resources.resources
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MetadataModeling.Client.Wpf.csproj.GenerateResource.cache
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MetadataModeling.Client.Wpf.csproj.CoreCompileInputs.cache
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MetadataModeling.Client.Wpf.exe
+C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Client.Wpf\obj\Debug\MetadataModeling.Client.Wpf.pdb
