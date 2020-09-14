@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetadataModeling.Base", "Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataModeling.Wpf", "MetadataModeling.Wpf\MetadataModeling.Wpf.csproj", "{15620007-C2AD-4AD4-9DBE-BBD050E123EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataModeling.Common", "Common\MetadataModeling.Common\MetadataModeling.Common.csproj", "{D0603B4C-CCAE-4244-B48B-F536E44003FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,9 +25,16 @@ Global
 		{15620007-C2AD-4AD4-9DBE-BBD050E123EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15620007-C2AD-4AD4-9DBE-BBD050E123EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15620007-C2AD-4AD4-9DBE-BBD050E123EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0603B4C-CCAE-4244-B48B-F536E44003FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0603B4C-CCAE-4244-B48B-F536E44003FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0603B4C-CCAE-4244-B48B-F536E44003FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0603B4C-CCAE-4244-B48B-F536E44003FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0603B4C-CCAE-4244-B48B-F536E44003FC} = {1522CC7B-1AE6-4F6B-943F-6407505898AF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {67CEA18A-26E2-4B2D-9349-5E8DDC24080C}
