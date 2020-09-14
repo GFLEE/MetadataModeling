@@ -1,6 +1,6 @@
-# MetadataModeling
+# ![image](https://github.com/GFLEE/MetadataModeling/blob/master/MetadataModeling.Shell/icon.ico)MetadataModeling
 ```
 MetadataModeling is a platform that help developers to build database modeling. 
-MetadataModeling ÊÇÒ»¸ö»ùÓÚUMLµÄ¡¢°ïÖú¿ª·¢ÈËÔ±Íê³ÉÔªÊı¾İ½¨Ä£µÄÆ½Ì¨£¬Ö¼ÔÚÊµÏÖÄ£ĞÍÇı¶¯¹¤³Ì(model driven engineering, MDE)¡£
+MetadataModeling æ˜¯ä¸€ä¸ªåŸºäºUMLçš„ã€å¸®åŠ©å¼€å‘äººå‘˜å®Œæˆå…ƒæ•°æ®å»ºæ¨¡çš„å¹³å°ï¼Œæ—¨åœ¨å®ç°æ¨¡å‹é©±åŠ¨å·¥ç¨‹(model driven engineering, MDE)ã€‚
 ```
  
