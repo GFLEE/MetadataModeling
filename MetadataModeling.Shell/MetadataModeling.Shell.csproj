@@ -84,6 +84,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -114,6 +115,10 @@
     <ProjectReference Include="..\Common\MetadataModeling.Common\MetadataModeling.Common.csproj">
       <Project>{d0603b4c-ccae-4244-b48b-f536e44003fc}</Project>
       <Name>MetadataModeling.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\MetadataModeling.Wpf.Base\MetadataModeling.Wpf.Base.csproj">
+      <Project>{7e6fe549-a91e-4605-83db-4f9b854e3d34}</Project>
+      <Name>MetadataModeling.Wpf.Base</Name>
     </ProjectReference>
     <ProjectReference Include="..\MetadataModeling.Base\MetadataModeling.Base.csproj">
       <Project>{97b64295-8ca5-42df-b7ad-31bc1ecad859}</Project>

@@ -6,7 +6,7 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:local="clr-namespace:MetadataModeling.Client.Wpf"
         mc:Ignorable="d"
-        Title="Metadata" Height="450" Width="800">
+        Title="Metadata" Height="700" Width="1000" WindowState="Maximized">
     <Grid>
         <Button Content="test"/>
     </Grid>
