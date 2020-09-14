@@ -1,9 +1,0 @@
-C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Metadata.Base\bin\Debug\netstandard2.0\MetadataModeling.Metadata.Base.deps.json
-C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Metadata.Base\bin\Debug\netstandard2.0\MetadataModeling.Metadata.Base.dll
-C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Metadata.Base\bin\Debug\netstandard2.0\MetadataModeling.Metadata.Base.pdb
-C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Metadata.Base\obj\Debug\netstandard2.0\MetadataModeling.Metadata.Base.csprojAssemblyReference.cache
-C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Metadata.Base\obj\Debug\netstandard2.0\MetadataModeling.Metadata.Base.AssemblyInfoInputs.cache
-C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Metadata.Base\obj\Debug\netstandard2.0\MetadataModeling.Metadata.Base.AssemblyInfo.cs
-C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Metadata.Base\obj\Debug\netstandard2.0\MetadataModeling.Metadata.Base.csproj.CoreCompileInputs.cache
-C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Metadata.Base\obj\Debug\netstandard2.0\MetadataModeling.Metadata.Base.dll
-C:\Users\Ricov\source\repos\GFLEE\MetadataModeling\MetadataModeling.Metadata.Base\obj\Debug\netstandard2.0\MetadataModeling.Metadata.Base.pdb
