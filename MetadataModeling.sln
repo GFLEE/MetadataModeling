@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{1522CC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetadataModeling.Base", "MetadataModeling.Base\MetadataModeling.Base.csproj", "{97B64295-8CA5-42DF-B7AD-31BC1ECAD859}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataModeling.Wpf", "MetadataModeling.Wpf\MetadataModeling.Wpf.csproj", "{15620007-C2AD-4AD4-9DBE-BBD050E123EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataModeling.Shell", "MetadataModeling.Wpf\MetadataModeling.Shell.csproj", "{15620007-C2AD-4AD4-9DBE-BBD050E123EC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetadataModeling.Common", "Common\MetadataModeling.Common\MetadataModeling.Common.csproj", "{D0603B4C-CCAE-4244-B48B-F536E44003FC}"
 EndProject
