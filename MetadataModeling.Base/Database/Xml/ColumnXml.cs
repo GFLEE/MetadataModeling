@@ -85,7 +85,7 @@ namespace MetadataModeling.Base.Database.Xml
         /// 顺序(主键应该永远在第一位)
         /// </summary>
         [DataMember]
-        public string DisplayIndex { get; set; }
+        public int DisplayIndex { get; set; }
 
 
         /// <summary>

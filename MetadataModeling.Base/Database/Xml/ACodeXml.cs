@@ -29,7 +29,7 @@ namespace MetadataModeling.Base.Database.Xml
         /// 顺序
         /// </summary>
         [DataMember] 
-        public string DisplayIndex { get; set; }
+        public int DisplayIndex { get; set; }
         /// <summary>
         /// 描述
         /// </summary>
