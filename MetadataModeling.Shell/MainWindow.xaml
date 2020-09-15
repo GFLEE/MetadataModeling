@@ -8,6 +8,6 @@
         mc:Ignorable="d"
         Title="Metadata" Height="700" Width="1000" WindowState="Maximized">
     <Grid>
-        <Button Content="test"/>
+        <Button Content="test" Width="150" Height="90" Margin="10"/>
     </Grid>
 </dx:ThemedWindow>
