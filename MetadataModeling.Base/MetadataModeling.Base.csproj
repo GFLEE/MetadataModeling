@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Database\Xml\" />
     <Folder Include="Enums\Xml\" />
   </ItemGroup>
 

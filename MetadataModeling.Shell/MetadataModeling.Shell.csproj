@@ -120,6 +120,10 @@
       <Project>{7e6fe549-a91e-4605-83db-4f9b854e3d34}</Project>
       <Name>MetadataModeling.Wpf.Base</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Common\MetadataModeling.Wpf\MetadataModeling.Wpf.csproj">
+      <Project>{89c58be4-0744-4e86-88a3-b7ea1ed22b44}</Project>
+      <Name>MetadataModeling.Wpf</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MetadataModeling.Base\MetadataModeling.Base.csproj">
       <Project>{97b64295-8ca5-42df-b7ad-31bc1ecad859}</Project>
       <Name>MetadataModeling.Base</Name>
