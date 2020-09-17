@@ -20,7 +20,7 @@ namespace MetadataModeling.Base.Database
         public DmContext Context { get; protected set; }
 
         public abstract string ID { get; }
-        public abstract string Name { get; }
+        public abstract string Name { get; set; }
 
 
         public virtual T XmlItemDeepClone()
