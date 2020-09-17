@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MetadataModeling.Base.Database
 {
-    class DmContext
+    public class DmContext
     {
     }
 }
