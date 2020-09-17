@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MetadataModeling.Base.Database
 {
-    class DmDefaultColumnEx
+    public class DmDefaultColumnEx
     {
     }
 }
