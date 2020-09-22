@@ -106,12 +106,12 @@ namespace MetadataModeling.Base.Database
             }
         }
 
-        private string GetCodeName()
+        public string GetCodeName()
         {
             return string.Format("{0}({1})", XmlItem.Code, XmlItem.Name);
         }
 
-        private string GetTableColumnCodeName()
+        public string GetTableColumnCodeName()
         {
             var table = Context.Tables.First(p => p.ID.Equals(XmlItem.TableID));
             var result = string.Format("[{0}].[{1}]", table.GetCodeName(), GetCodeName());

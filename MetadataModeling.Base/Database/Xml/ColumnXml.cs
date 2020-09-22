@@ -42,7 +42,11 @@ namespace MetadataModeling.Base.Database.Xml
         /// </summary>
         [DataMember]
         public string RefFkColumnID { get; set; }
-
+        /// <summary>
+        /// 类型
+        /// </summary>
+        [DataMember]
+        public EuColumnType ColumnType { get; set; }
         /// <summary>
         /// 长度(字符类型有效)
         /// </summary>
@@ -53,7 +57,7 @@ namespace MetadataModeling.Base.Database.Xml
         /// 允许Null
         /// </summary>
         [DataMember]
-        public bool IsNull { get; set; }
+        public bool IsNullable { get; set; }
 
         /// <summary>
         /// 必填
@@ -78,7 +82,7 @@ namespace MetadataModeling.Base.Database.Xml
         /// 自增标识(Int)
         /// </summary>
         [DataMember]
-        public bool IsIdentity{ get; set; }
+        public bool IsIdentity { get; set; }
 
 
         /// <summary>
@@ -130,7 +134,7 @@ namespace MetadataModeling.Base.Database.Xml
         /// </summary>
         [DataMember]
         public string EnumCode { get; set; }
-         
+
         /// <summary>
         /// 引用其他数据库列的ID
         /// </summary>
