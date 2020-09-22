@@ -17,6 +17,7 @@ namespace MetadataModeling.Base.Database
         {
             this.XmlItem = xmlItem;
             this.Context = context;
+
             Kvs = new List<DmKv>();
             Kvs.Add(new DmKv("TableRequiredColumns", "表必备列")); ;
             Kvs.Add(new DmKv("TableSuggestedColumns", "表建议列")); ;
@@ -91,6 +92,24 @@ namespace MetadataModeling.Base.Database
             }
 
         }
+
+        public List<DmDefaultColumn> GetColumnByKeys(List<string> keys)
+        {
+            var list = new List<string>();
+            Kvs.ForEach(p =>
+            {
+                if (keys.Contains(p.K))
+                {
+                    list.AddRange(GetColumnIDsByKey(p.K));
+                }
+            });
+
+            var query = from c in Context.DefaultColumns
+                        join cid in list.Distinct() on c.ID equals cid
+                        select c;
+            return query.ToList();
+        }
+
 
         public List<string> GetColumnIDsByKey(string key)
         {
