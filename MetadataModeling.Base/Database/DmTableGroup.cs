@@ -17,7 +17,7 @@ namespace MetadataModeling.Base.Database
             this.Tables = new List<DmTable>();
         }
 
-        List<DmTable> Tables { get; set; }
+        public List<DmTable> Tables { get; set; }
 
         internal void Init()
         {

@@ -15,6 +15,15 @@ namespace MetadataModeling.Common
             return Guid.NewGuid().ToString().ToUpper();
         }
 
+        /// <summary>
+        /// 默认ID
+        /// </summary>
+        /// <returns></returns>
+        public static string DefaultID()
+        {
+            return "0000-0000-0000-0000";
+        }
+
 
     }
 }

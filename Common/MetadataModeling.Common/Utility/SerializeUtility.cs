@@ -7,13 +7,47 @@ using System.Xml;
 
 namespace MetadataModeling.Common
 {
+    /// <summary>
+    /// Xml序列化工具
+    /// </summary>
     public class SerializeUtility
     {
         /// <summary>
-        /// Xml序列化成二进制
+        /// 序列化对象
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
+        public static string Serialize(object obj)
+        {
+            return Serialize(obj, null);
+        }
+
+        private static string Serialize(object obj, Type[] knowTypes)
+        {
+            XmlWriterSettings xmlWriterSettings = new XmlWriterSettings()
+            {
+                Indent = true,
+                Encoding = Encoding.UTF8,
+                IndentChars = "\t",
+            };
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                using (StreamReader reader = new StreamReader(ms))
+                {
+                    XmlWriter writer = XmlWriter.Create(ms, xmlWriterSettings);
+                    DataContractSerializer serializer = new DataContractSerializer(obj.GetType(), knowTypes);
+                    serializer.WriteObject(writer, obj);
+                    writer.Flush();
+                    writer.Close();
+                    ms.Position = 0;
+                    return reader.ReadToEnd();
+                } 
+            }
+
+
+        }
+
         public static byte[] SerializeToArray(object obj)
         {
             using (MemoryStream ms = new MemoryStream())
@@ -22,8 +56,6 @@ namespace MetadataModeling.Common
                 serializer.WriteObject(ms, obj);
                 var result = ms.ToArray();
                 return result;
-
-
             }
 
         }
@@ -62,5 +94,26 @@ namespace MetadataModeling.Common
 
             }
         }
+
+        public static object Deserialize(string xml, Type toType)
+        {
+            return Deserialize(xml, toType, null);
+        }
+
+        private static object Deserialize(string xml, Type toType, Type[] knowTypes)
+        {
+            using (Stream stream = new MemoryStream())
+            {
+                byte[] data = Encoding.UTF8.GetBytes(xml);
+                stream.Write(data, 0, data.Length);
+                stream.Position = 0;
+                DataContractSerializer deserializer = new DataContractSerializer(toType, knowTypes);
+                return deserializer.ReadObject(stream);
+            }
+
+
+        }
+
+
     }
 }
