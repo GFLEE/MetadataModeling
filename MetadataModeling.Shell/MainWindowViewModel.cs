@@ -4,6 +4,8 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MetadataModeling.Shell.Database;
+using MetadataModeling.Shell.Enums;
 using MetadataModeling.Wpf;
 using MetadataModeling.Wpf.Base.Control;
 
@@ -17,12 +19,14 @@ namespace MetadataModeling.Shell
         public MainWindowViewModel()
         {
             Title = ConfigurationManager.AppSettings["Title"];
+            DatabaseViewModel = new CrlDatabaseViewModel();
+            MainViewModel = new CrlMainViewModel();
         }
 
 
 
-
-
+        public CrlDatabaseViewModel DatabaseViewModel { get; set; }
+        public CrlMainViewModel MainViewModel { get; set; }
         /// <summary>
         /// Window Title
         /// </summary>
