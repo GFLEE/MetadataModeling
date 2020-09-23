@@ -4,10 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
-        xmlns:local="clr-namespace:MetadataModeling.Client.Wpf"
-        mc:Ignorable="d"
-        Title="{Binding Title,Mode=TwoWay}" Height="700" Width="1000" WindowState="Maximized">
+        xmlns:local="clr-namespace:MetadataModeling.Shell"
+        mc:Ignorable="d" Title="{Binding Title,Mode=TwoWay}" 
+        d:DataContext="{d:DesignInstance Type={x:Type local:MainWindowViewModel}}"
+        Height="700" Width="1000" WindowState="Maximized">
     <Grid>
-        <Button Content="test" Width="150" Height="90" Margin="10"/>
+        <TabControl Background="{x:Null}">
+            <TabItem Header="数据库元数据">
+                <Grid>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="枚举">
+                <Grid>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
     </Grid>
 </dx:ThemedWindow>

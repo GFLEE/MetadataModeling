@@ -1,4 +1,5 @@
 ﻿using DevExpress.Xpf.Core;
+using MetadataModeling.Shell;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,16 @@ namespace MetadataModeling.Client.Wpf
     /// </summary>
     public partial class MainWindow : ThemedWindow
     {
+        /// <summary>
+        /// MainWindow
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
+            var vm = new MainWindowViewModel();
+            vm.Window = this;
+            this.DataContext = vm;
+
         }
     }
 }

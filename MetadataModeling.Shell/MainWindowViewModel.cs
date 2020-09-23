@@ -1,28 +1,37 @@
-﻿using MetadataModeling.Wpf;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MetadataModeling.Wpf;
+using MetadataModeling.Wpf.Base.Control;
 
 namespace MetadataModeling.Shell
 {
-    public class MainWindowViewModel : NotifyPropertyChangedBase
+    /// <summary>
+    /// MainWindowViewModel
+    /// </summary>
+    public class MainWindowViewModel : WindowViewModel
     {
+        public MainWindowViewModel()
+        {
+            Title = ConfigurationManager.AppSettings["Title"];
+        }
 
 
 
 
+
+        /// <summary>
+        /// Window Title
+        /// </summary>
         public string title;
         public string Title
         {
             get
             {
-                if (title == null)
-                {
-                    return ConfigurationManager.AppSettings["Title"];
-                }
+
                 return title;
             }
 
@@ -33,8 +42,5 @@ namespace MetadataModeling.Shell
 
             }
         }
-
-
-
     }
 }

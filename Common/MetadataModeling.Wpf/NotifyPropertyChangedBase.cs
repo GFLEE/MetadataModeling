@@ -17,7 +17,7 @@ namespace MetadataModeling.Wpf
         /// <param name="propertyName"></param>
         public  void NotifyPropertyChanged(string propertyName)
         {
-            if (PropertyChanged == null)
+            if (PropertyChanged != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 
