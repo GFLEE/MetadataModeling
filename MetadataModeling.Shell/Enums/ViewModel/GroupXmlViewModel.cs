@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MetadataModeling.Shell.Enums.ViewModel
 {
-    public class EnumXmlViewModel
+    public class GroupXmlViewModel
     {
-        public EnumXmlViewModel()
+        public GroupXmlViewModel()
         {
 
         }

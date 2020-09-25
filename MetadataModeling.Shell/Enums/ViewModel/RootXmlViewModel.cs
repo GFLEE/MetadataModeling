@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace MetadataModeling.Shell.Enums.ViewModel
 {
-    public class EnumXmlViewModel
+    public class RootXmlViewModel
     {
-        public EnumXmlViewModel()
+        public RootXmlViewModel()
         {
 
         }
-
-
-
     }
 }

@@ -4,14 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MetadataModeling.Shell.Enums.ViewModel
+namespace MetadataModeling.Shell.Database.ViewModel
 {
-    public class EnumXmlViewModel
+    public class DmACodeViewModel
     {
-        public EnumXmlViewModel()
+        public DmACodeViewModel()
         {
 
         }
+
+
+
+
+
+
 
 
 

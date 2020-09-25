@@ -77,12 +77,169 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Database\CrlDatabase.xaml.cs">
+      <DependentUpon>CrlDatabase.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Database\CrlDatabaseViewModel.cs" />
+    <Compile Include="Database\CrlDatabaseViewModel1.cs" />
+    <Compile Include="Database\CrlEditACode1.xaml.cs">
+      <DependentUpon>CrlEditACode1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CrlEditACode1ViewModel.cs" />
+    <Compile Include="Database\CrlEditColumn.xaml.cs">
+      <DependentUpon>CrlEditColumn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CrlEditColumnViewModel.cs" />
+    <Compile Include="Database\CrlEditDefaultColumn.xaml.cs">
+      <DependentUpon>CrlEditDefaultColumn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CrlEditDefaultColumnViewModel.cs" />
+    <Compile Include="Database\CrlEditFileXml.xaml.cs">
+      <DependentUpon>CrlEditFileXml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CrlEditFileXmlViewModel.cs" />
+    <Compile Include="Database\CrlEditRoot.xaml.cs">
+      <DependentUpon>CrlEditRoot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CrlEditRootViewModel.cs" />
+    <Compile Include="Database\CrlEditTable.xaml.cs">
+      <DependentUpon>CrlEditTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CrlEditTableGroup.xaml.cs">
+      <DependentUpon>CrlEditTableGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CrlEditTableGroupViewModel.cs" />
+    <Compile Include="Database\CrlEditTableViewModel.cs" />
+    <Compile Include="Database\SelectFkColumn.xaml.cs">
+      <DependentUpon>SelectFkColumn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SelectFkColumnViewModel.cs" />
+    <Compile Include="Database\ViewModel\ColumnXmlViewModel.cs" />
+    <Compile Include="Database\ViewModel\DmACodeViewModel.cs" />
+    <Compile Include="Database\ViewModel\DmColumnViewModel.cs" />
+    <Compile Include="Database\ViewModel\DmColumnViewModelBase.cs" />
+    <Compile Include="Database\ViewModel\DmConverter.cs" />
+    <Compile Include="Database\ViewModel\DmDefaultColumnViewModel.cs" />
+    <Compile Include="Database\ViewModel\DmTableGroupViewModel.cs" />
+    <Compile Include="Database\ViewModel\DmTableViewModel.cs" />
+    <Compile Include="Database\ViewModel\TableGroupXmlViewModel.cs" />
+    <Compile Include="Database\ViewModel\TableXmlViewModel.cs" />
+    <Compile Include="Database\ViewModel\vm1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vm1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\WinSelectDefaultColumn.xaml.cs">
+      <DependentUpon>WinSelectDefaultColumn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\WinSelectDefaultColumnViewModel.cs" />
+    <Compile Include="Database\WinSelectGroup.xaml.cs">
+      <DependentUpon>WinSelectGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\WinSelectGroupViewModel.cs" />
+    <Compile Include="Database\WinSelectOtherColumn.xaml.cs">
+      <DependentUpon>WinSelectOtherColumn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Database\WinSelectOtherColumnViewModel.cs" />
+    <Compile Include="Enums\CrlMain.xaml.cs">
+      <DependentUpon>CrlMain.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Enums\CrlMainViewModel.cs" />
+    <Compile Include="Enums\CrlEditEnumItemXml.xaml.cs">
+      <DependentUpon>CrlEditEnumItemXml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\CrlEditEnumItemXmlViewModel.cs" />
+    <Compile Include="Enums\CrlEditEnumXml.xaml.cs">
+      <DependentUpon>CrlEditEnumXml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\CrlEditEnumXmlViewModel.cs" />
+    <Compile Include="Enums\CrlEditGroupXml.xaml.cs">
+      <DependentUpon>CrlEditGroupXml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\CrlEditGroupXmlViewModel.cs" />
+    <Compile Include="Enums\CrlEditRootXml.xaml.cs">
+      <DependentUpon>CrlEditRootXml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\CrlEditRootXmlViewModel.cs" />
     <Compile Include="Enums\ViewModel\EnumConverter.cs" />
     <Compile Include="Enums\ViewModel\EnumItemXmlViewModel.cs" />
     <Compile Include="Enums\ViewModel\EnumXmlViewModel.cs" />
+    <Compile Include="Enums\ViewModel\GroupXmlViewModel.cs" />
+    <Compile Include="Enums\ViewModel\RootXmlViewModel.cs" />
+    <Compile Include="Enums\ViewModel\vm1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vm1.tt</DependentUpon>
+    </Compile>
     <Compile Include="WpfUtility.cs" />
+    <Page Include="Database\CrlDatabase.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\CrlEditACode1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\CrlEditColumn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\CrlEditDefaultColumn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\CrlEditFileXml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\CrlEditRoot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\CrlEditTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\CrlEditTableGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\SelectFkColumn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\WinSelectDefaultColumn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\WinSelectGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Database\WinSelectOtherColumn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Enums\CrlMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Enums\CrlEditEnumItemXml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Enums\CrlEditEnumXml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Enums\CrlEditGroupXml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Enums\CrlEditRootXml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -146,8 +303,20 @@
     <Resource Include="icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Database\ViewModel\" />
     <Folder Include="Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\ViewModel\vm1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>vm1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Enums\ViewModel\vm1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>vm1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MaterialDesignThemes.3.1.3\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.1.3\build\MaterialDesignThemes.targets')" />

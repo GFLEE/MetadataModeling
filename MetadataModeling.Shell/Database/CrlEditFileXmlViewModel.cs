@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MetadataModeling.Shell.Enums.ViewModel
+namespace MetadataModeling.Shell.Database
 {
-    public class EnumXmlViewModel
+    public class CrlEditFileXmlViewModel
     {
-        public EnumXmlViewModel()
+        public CrlEditFileXmlViewModel()
         {
 
         }
