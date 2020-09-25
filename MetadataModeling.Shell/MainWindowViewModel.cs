@@ -18,7 +18,6 @@ namespace MetadataModeling.Shell
     {
         public MainWindowViewModel()
         {
-            Title = ConfigurationManager.AppSettings["Title"];
             DatabaseViewModel = new CrlDatabaseViewModel();
             MainViewModel = new CrlMainViewModel();
         }
@@ -36,7 +35,7 @@ namespace MetadataModeling.Shell
             get
             {
 
-                return title;
+                return ConfigurationManager.AppSettings["Title"];
             }
 
             set

@@ -4,22 +4,46 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
-        xmlns:local="clr-namespace:MetadataModeling.Shell"
-        mc:Ignorable="d" Title="{Binding Title,Mode=TwoWay}" 
+        xmlns:local="clr-namespace:MetadataModeling.Shell" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Title="{Binding Title,Mode=TwoWay}"  
         d:DataContext="{d:DesignInstance Type={x:Type local:MainWindowViewModel}}"
         Height="700" Width="1000" WindowState="Maximized">
-    <Grid>
-        <TabControl Background="{x:Null}">
-            <TabItem Header="数据库元数据">
+    <Border BorderBrush="WhiteSmoke" BorderThickness="0 0 0 3" Margin="5">
+        <TabControl   Background="{x:Null}" >
+            <TabItem   >
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Database" Width="auto" Foreground="#3949ab" Height="auto"/>
+                        <TextBlock Text="数据库元数据" Margin="5 0 0 0" FontSize="13" VerticalAlignment="Center" Foreground="Black" />
+                    </StackPanel>
+                </TabItem.Header>
                 <Grid>
 
                 </Grid>
             </TabItem>
-            <TabItem Header="枚举">
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="FormatListBulleted" Width="auto" Foreground="#3949ab" Height="auto"/>
+                        <TextBlock Text="枚举定义" Margin="5 0 0 0" FontSize="13" VerticalAlignment="Center" Foreground="Black" />
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid>
+
+                </Grid>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="ViewDashboardOutline" Width="auto" Foreground="#3949ab" Height="auto"/>
+                        <TextBlock Text="ER模型图" Margin="5 0 0 0" FontSize="13" VerticalAlignment="Center" Foreground="Black" />
+                    </StackPanel>
+                </TabItem.Header>
                 <Grid>
 
                 </Grid>
             </TabItem>
         </TabControl>
-    </Grid>
+    </Border>
 </dx:ThemedWindow>
