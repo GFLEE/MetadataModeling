@@ -79,6 +79,9 @@
     </ApplicationDefinition>
     <Compile Include="Database\CrlDatabaseViewModel.cs" />
     <Compile Include="Enums\CrlMainViewModel.cs" />
+    <Compile Include="Enums\ViewModel\EnumConverter.cs" />
+    <Compile Include="Enums\ViewModel\EnumItemXmlViewModel.cs" />
+    <Compile Include="Enums\ViewModel\EnumXmlViewModel.cs" />
     <Compile Include="WpfUtility.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -144,7 +147,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\ViewModel\" />
-    <Folder Include="Enums\ViewModel\" />
     <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
