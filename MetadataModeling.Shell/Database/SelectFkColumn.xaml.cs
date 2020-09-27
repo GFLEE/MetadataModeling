@@ -18,7 +18,7 @@ namespace MetadataModeling.Shell.Database
     /// <summary>
     /// SelectFkColumn.xaml 的交互逻辑
     /// </summary>
-    public partial class SelectFkColumn : UserControl
+    public partial class SelectFkColumn : Window
     {
         public SelectFkColumn()
         {

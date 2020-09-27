@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MetadataModeling.Shell
 {
-    internal class WpfUtility
+    public class WpfUtility
     {
         public static string GetCodeName(string code, string name)
         {

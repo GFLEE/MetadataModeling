@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
+using MetadataModeling.Shell.Database.ViewModel;
 
 namespace MetadataModeling.Shell.Database.ViewModel
 {

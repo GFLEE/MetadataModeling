@@ -1,0 +1,191 @@
+﻿<#@ assembly name="System"#>
+<#@ assembly name="System.Core"#>
+<#@ assembly name="System.Runtime" #>
+<#@ assembly name="System.Xml" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO' #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Collections #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Text.RegularExpressions" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
+
+<#+
+public class VmTextTransformation: TextTransformation
+{
+        public List<Type> Types{get; private set;}
+        public string Ns  {get;private set;}
+   
+}
+
+
+public VmTextTransformation(string ns,List<Type> types)
+{
+        this.Ns=ns;
+        this.Types=types;       }
+public override string TransformText()
+{
+#>
+using System;
+using MetadataModeling.Wpf.Base;
+using System.Collections.ObjectModel;
+<#+
+        var ns = Types.Select(p=>p.Namespace).Distinct().Tolist();
+        foreach (var item in ns)
+        {
+#>
+using <#=item#>;
+<#+
+        }
+#>
+using System.Collections.Generic;
+namespace MetadataModeling.Shell.<#=Ns#>.ViewModel
+<#+
+
+foreach(var type in Types)
+        {
+#>
+    #region <#=type.FullName#>
+    ///<summary>
+    ///ViewModel of <#=type.FullName#>
+    ///<summary>
+    public partial class <#=type.Name#>ViewModel : SimplyViewModelBase<<#=type.Name#>>
+    { 
+        public <#=type.Name#>ViewModel(<#=type.Name#> item) : base(item)
+        {
+        
+        }
+{
+public <#=type.Name#>ViewModel(<#=type.Name#> item, object tag) : base(item)
+{
+    this.Tag = tag;
+}
+    public object Tag
+    {
+        get;set;
+    }
+<#+
+    var ps = type.GetProperties().Where(p=>p.CanWrite).ToList();
+    foreach (var p in ps)
+    {
+        var isList=false;
+        var pTypeName = p.PropertyType.ToString();
+        Type firstGenericArgumentType=null;
+        bool isViewModel = false;
+        if(p.PropertyType.IsGenericType)
+        {
+            var genericTypeDefinition=p.PropertyType.GetGenericTypeDefinition();
+            firstGenericArgumentType = p.PropertyType.GetGenericArguments()[0];
+
+            var isNullable = genericTypeDefinition.Equals(typeof(Nullable<>));
+            if(isNullable)
+            {
+                pTypeName=string.Format("{0}?",firstGenericArgumentType.Name);
+            }
+            islist = genericTypeDefinition.Equals(typeof(List<>));
+            if(isList)
+            {
+            if(Types.Contains(firstGenericArgumentType))
+            {
+              isViewModel=true;
+              pTypeName=string.Format("ObservableCollection<{0}ViewModel>", firstGenericArgumentType.Name);
+            }
+            else
+            {
+                pTypeName=string.Format("List<{0}>", firstGenericArgumentType.Name);
+
+            }
+          }
+        }
+        else
+        {
+            if(Types.Contains(p.PropertyType))
+            {
+                pTypeName=string.Format("{0}ViewModel", p.PropertyType.Name);
+            }
+        }
+            var pName = p.Name;
+            var fName = p.Name.Substring(0,1).ToLower() + p.Name.Substring(1);
+            if(fName=="value")
+{
+                fName="vValue";
+            }
+#>
+        #region <#=pName#>
+
+        <#=pTypeName#> <#=fName#>;
+        public <#=pTypeName#> <#=pName#>
+        {
+            get
+            {
+<#+
+                if(isList)
+                {
+#>                    if(<#=fName%#> != null)
+                      {
+                             return <#=fName#>;
+                      }
+<#+
+                            if(lisViewModel)
+                            {
+#>
+                         <#=fName#> = Item.<#=pName#>;
+                         return <#=fName#>;
+<#+
+                                }
+                                else
+                                {
+#>
+                        <#=fName#> = new <#=pTypeName#>();
+                        if(Item.<#=pName#>==null)
+                        {
+                              return <#=fName#>;  
+                        }
+                        foreach(var obj in Item.<#=pName#>)
+                        {
+                            <#=fName#>.Add(new <#=firstGenericArgumentType.Name#>ViewModel(obj)):
+                           }
+                           return <#=fName#>;
+<#+
+                                }
+                           }
+                           else
+                           {
+#>
+                                return <#=fName#>;
+<#+
+                           }
+#>
+            }
+            set
+            {
+                if (<#=fName#> == value)
+                {
+                  return;
+                }
+                <#=fName#> = value;
+                NotifyPropertyChanged(" <#=pName#> ");
+                OnAfterChangeOf<#=pName#>();
+                }
+            }
+
+            partial void OnAfterChangeOf<#=pName#>();
+            
+            #endregion
+<#+
+    }
+
+#>
+        }
+         #endregion
+<#+
+            }
+#>
+}
+<#+
+    return GenerationEnvironment.ToString();
+    }
+  }
+
+#>
+
