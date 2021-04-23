@@ -9,13 +9,13 @@
         mc:Ignorable="d" Title="{Binding Title,Mode=TwoWay}"  
         d:DataContext="{d:DesignInstance Type={x:Type local:MainWindowViewModel}}"
         Height="700" Width="1000" WindowState="Maximized">
-    <Border BorderBrush="WhiteSmoke" BorderThickness="0 0 0 3" Margin="5">
+    <Border BorderBrush="WhiteSmoke" BorderThickness="0 0 0 3" >
         <TabControl   Background="{x:Null}" >
             <TabItem   >
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Database" Width="auto" Foreground="#3949ab" Height="auto"/>
-                        <TextBlock Text="数据库元数据" Margin="5 0 0 0" FontSize="13" VerticalAlignment="Center" Foreground="Black" />
+                        <TextBlock Text="元数据定义" Margin="5 0 0 0" FontSize="13" VerticalAlignment="Center" Foreground="Black" />
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>
