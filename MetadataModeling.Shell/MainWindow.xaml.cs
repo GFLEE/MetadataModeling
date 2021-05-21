@@ -29,6 +29,7 @@ namespace MetadataModeling.Client.Wpf
         {
             InitializeComponent();
             var vm = new MainWindowViewModel();
+            vm.DatabaseViewModel.Window = this.CrlDatabase;
             vm.Window = this;
             this.DataContext = vm;
 

@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MetadataModeling.Base",
+    "\\MetadataModeling.Shell"
   ],
+  "SelectedNode": "\\MetadataModeling.Shell",
   "PreviewInSolutionExplorer": false
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 
 namespace MetadataModeling.Wpf.Base.Control
@@ -18,7 +19,7 @@ namespace MetadataModeling.Wpf.Base.Control
         /// <summary>
         /// ViewMode对应的窗口对象
         /// </summary>
-        public Window Window { get; set; }
+        public ContentControl Window { get; set; }
 
         public virtual bool Close()
         {
@@ -51,9 +52,9 @@ namespace MetadataModeling.Wpf.Base.Control
         {
             if (Close())
             {
-                if (Window != null)
+                if (Window != null && Window is Window)
                 {
-                    Window.Close();
+                    (Window as Window).Close();
                 }
             }
         }

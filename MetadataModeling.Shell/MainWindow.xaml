@@ -6,27 +6,28 @@
         xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
         xmlns:local="clr-namespace:MetadataModeling.Shell" 
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:dbcrls="clr-namespace:MetadataModeling.Shell.Database"  
         mc:Ignorable="d" Title="{Binding Title,Mode=TwoWay}"  
         d:DataContext="{d:DesignInstance Type={x:Type local:MainWindowViewModel}}"
         Height="700" Width="1000" WindowState="Maximized">
-    <Border BorderBrush="WhiteSmoke" BorderThickness="0 0 0 3" >
+    <Border BorderBrush="WhiteSmoke" BorderThickness="0 0 0 1" >
         <TabControl   Background="{x:Null}" >
             <TabItem   >
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Database" Width="auto" Foreground="#3949ab" Height="auto"/>
-                        <TextBlock Text="元数据定义" Margin="5 0 0 0" FontSize="13" VerticalAlignment="Center" Foreground="Black" />
+                        <TextBlock Text="元数据定义"   FontSize="12" VerticalAlignment="Center" Foreground="Black" />
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>
-
+                    <dbcrls:CrlDatabase x:Name="CrlDatabase"/>
                 </Grid>
             </TabItem>
             <TabItem>
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="FormatListBulleted" Width="auto" Foreground="#3949ab" Height="auto"/>
-                        <TextBlock Text="枚举定义" Margin="5 0 0 0" FontSize="13" VerticalAlignment="Center" Foreground="Black" />
+                        <TextBlock Text="枚举定义"   FontSize="12" VerticalAlignment="Center" Foreground="Black" />
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>
@@ -37,7 +38,7 @@
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="ViewDashboardOutline" Width="auto" Foreground="#3949ab" Height="auto"/>
-                        <TextBlock Text="ER模型图" Margin="5 0 0 0" FontSize="13" VerticalAlignment="Center" Foreground="Black" />
+                        <TextBlock Text="ER模型图"   FontSize="12" VerticalAlignment="Center" Foreground="Black" />
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>
